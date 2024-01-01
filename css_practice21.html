@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 문서</title>
+    <style>
+        div{width: 100px; height: 100px; position: relative;}
+        div:nth-child(1){ background-color: yellow;}
+        div:nth-child(2){ background-color: cyan; bottom: 50px;}
+        div:nth-child(3){ background-color: ivory; bottom: 100px;}
+        div:nth-child(4){
+            background-color: mediumblue; bottom: 150px;
+        }
+        .first{ z-index: 1;} /*쌓이는 순서가 1이 2보다 먼저*/
+        .second{ z-index: 2;}
+        .third{ z-index: 10;} /*정해진 값이 아니라 상대적인 값*/
+        /*z index가 같으면 나중거가 더 위에 쌓이게 된다*/
+    </style>
+</head>
+<body>
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+    <div class="fourth">4</div>
+</body>
+</html>
