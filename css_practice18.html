@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 문서</title>
+    <style>
+        /* hover active focus disabled nth-child()*/
+        [type="button"] {
+            width: 100px; height: 30px;
+            background-color: tomato; color: white;
+            border: none; border-radius: 8px;
+        }
+        [type="button"]:hover{
+            background-color: gray;
+        }
+        [type="button"]:active{
+            /*활성화 - 버튼의 경우 클릭 상태*/
+            background-color: black;
+        }
+        /*----------------------------*/
+        input:focus{
+            /*마우스 커서가 올라갈 경우*/
+            color: white;
+            background-color: red;
+        }
+        input:disabled{
+            height: 300px;
+        }
+        body{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box{
+            width: 50px; height: 50px; background-color: blue; color: white;
+        }
+        .box:nth-child(2n){
+            /*n번째 형제에 대해 스타일 지정*/
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="버튼">
+    <input type="text" placeholder="아무거나 쓰기">
+
+    <div class="box">1번</div>
+    <div class="box">2번</div>
+    <div class="box">3번</div>
+    <div class="box">4번</div>
+    <div class="box">5번</div>
+</body>
+</html>

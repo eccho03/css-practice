@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 문서</title>
+    <style>
+        #a{ width: 100px; height: 50px;
+        background-color: orange;
+        float: right; } /*문서 흐름에서 제외되고 혼자 오른쪽에 떠있음*/
+        #b{ width: 100px; height: 100px;
+        background-color: royalblue;
+        float: left; }
+        p {
+          clear: both;
+          /*left, right 요소보다 아래에서 시작한다*/ 
+        }
+    </style>
+</head>
+<body>
+    <div id = "a"></div>
+    <div id = "b"></div>
+    <p>안녕하세요 저는 세 번째 태그에요</p>
+    <p>안녕하세요 저는 세 번째 태그에요</p>
+    <p>안녕하세요 저는 세 번째 태그에요</p>
+    <p>안녕하세요 저는 세 번째 태그에요</p>
+    <p>안녕하세요 저는 세 번째 태그에요</p>
+    <p>안녕하세요 저는 세 번째 태그에요</p>
+    <p>안녕하세요 저는 세 번째 태그에요</p>
+    <p>안녕하세요 저는 세 번째 태그에요</p>
+</body>
+</html>

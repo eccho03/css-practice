@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 문서</title>
+    <style>
+        .container{
+            display: flex;
+            width: 300px; height: 300px;
+            border: 2px solid black;
+            justify-content: center; /*가운데 정렬*/
+            /*justify-content: flex-start; 왼쪽 정렬*/
+            /*justify-content: flex-end; 오른쪽 정렬*/
+            /*justify-content: space-around; 여백을 동일하게 맞춤*/
+            /*justify-content: space-between; 첫, 두번째 요소를 양끝에다 붙임*/
+            align-items: flex-end; /*교차축에서 제일 아래쪽에 배치됨*/
+            /*flex-start, center*/
+
+            flex-wrap: nowrap;
+            /*nowrap
+            flex container에서
+            자식의 크기가 container보다
+            커지는 경우 자식 요소 크기를 줄임*/
+            /*reverse도 있음*/
+        }
+        .item{
+            width: 120px; height: 60px;
+            background-color: teal;
+        }
+        .self{
+            align-self: flex-start; /*개별 요소 하나만 배치되는 속성임*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item self">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
